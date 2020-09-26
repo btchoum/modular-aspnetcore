@@ -1,9 +1,8 @@
-using System;
 using Xunit;
 
-namespace ServiceDesk.Tests
+namespace Sales.Tests.IntegrationTests
 {
-    public class UnitTest1
+    public class SampleIntegrationTests
     {
         [Fact]
         public void Test1()
