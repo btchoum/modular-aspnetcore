@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Sales\Sales.csproj" />
+    <ProjectReference Include="..\ServiceDesk\ServiceDesk.csproj" />
+  </ItemGroup>
+
 </Project>
