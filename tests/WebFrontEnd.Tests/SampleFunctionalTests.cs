@@ -1,14 +1,13 @@
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit;
 
 namespace WebFrontEnd.Tests
 {
-    public class SampleFunctionalTests : IClassFixture<WebApplicationFactory<Startup>>
+    public class SampleFunctionalTests : IClassFixture<CustomWebApplicationFactory<Startup>>
     {
-        private readonly WebApplicationFactory<Startup> _factory;
+        private readonly CustomWebApplicationFactory<Startup> _factory;
 
-        public SampleFunctionalTests(WebApplicationFactory<Startup> factory)
+        public SampleFunctionalTests(CustomWebApplicationFactory<Startup> factory)
         {
             _factory = factory;
         }
