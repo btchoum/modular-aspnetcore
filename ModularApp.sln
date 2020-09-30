@@ -7,19 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{6AC9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6D61B4F7-6B43-4948-B3D9-F3AC0D614FE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales", "src\Sales\Sales.csproj", "{5F541D6E-0F2C-4E0E-98CF-6D3C0D723F87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales", "src\Sales\Sales.csproj", "{5F541D6E-0F2C-4E0E-98CF-6D3C0D723F87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Tests", "tests\Sales.Tests\Sales.Tests.csproj", "{F117911A-E6F2-4751-8201-4FF43842DBF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.Tests", "tests\Sales.Tests\Sales.Tests.csproj", "{F117911A-E6F2-4751-8201-4FF43842DBF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDesk", "src\ServiceDesk\ServiceDesk.csproj", "{5DE836D3-7515-4EE1-AE65-6D8E91607375}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceDesk", "src\ServiceDesk\ServiceDesk.csproj", "{5DE836D3-7515-4EE1-AE65-6D8E91607375}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDesk.Tests", "tests\ServiceDesk.Tests\ServiceDesk.Tests.csproj", "{CF2BE758-9EB2-4FF2-8743-A5F37F143376}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceDesk.Tests", "tests\ServiceDesk.Tests\ServiceDesk.Tests.csproj", "{CF2BE758-9EB2-4FF2-8743-A5F37F143376}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{8D6C71C8-F55E-4996-81A3-46744CA9FEE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFrontEnd", "src\WebFrontEnd\WebFrontEnd.csproj", "{3B2AA902-6EE4-4A8E-94FE-4BC1CD8F2F34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebFrontEnd", "src\WebFrontEnd\WebFrontEnd.csproj", "{3B2AA902-6EE4-4A8E-94FE-4BC1CD8F2F34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFrontEnd.Tests", "tests\WebFrontEnd.Tests\WebFrontEnd.Tests.csproj", "{88F726ED-CD38-4B55-B007-8EF78912DB71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebFrontEnd.Tests", "tests\WebFrontEnd.Tests\WebFrontEnd.Tests.csproj", "{88F726ED-CD38-4B55-B007-8EF78912DB71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

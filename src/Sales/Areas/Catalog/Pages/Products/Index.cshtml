@@ -1,0 +1,33 @@
+﻿@page
+@model Sales.Areas.Catalog.Pages.Products.IndexModel
+@{
+}
+
+<a asp-page="Create" class="btn btn-primary">Create New Product</a>
+
+@if (Model.Products.Count == 0)
+{
+    <p>There are no products in the database</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Created On</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.Products)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                    <td>@product.CreatedOnUtc.ToShortDateString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

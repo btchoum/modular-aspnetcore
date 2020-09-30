@@ -1,0 +1,18 @@
+﻿@page
+@model Sales.Areas.Catalog.Pages.Products.CreateModel
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Command.Name">Product Name</label>
+        <input type="text" asp-for="Command.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Command.Description">Product Description</label>
+        <textarea asp-for="Command.Description" class="form-control"></textarea>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
