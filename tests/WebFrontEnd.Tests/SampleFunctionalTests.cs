@@ -16,6 +16,8 @@ namespace WebFrontEnd.Tests
         [Theory]
         [InlineData("/")]
         [InlineData("/Catalog")]
+        [InlineData("/Catalog/Products")]
+        [InlineData("/Catalog/Products/Create")]
         [InlineData("/Index")]
         [InlineData("/Tickets")]
         public async Task Get_returns_success_and_correct_content_type(string url)
