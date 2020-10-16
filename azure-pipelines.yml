@@ -16,8 +16,13 @@ variables:
 
 steps:
 - task: DotNetCoreCLI@2
-  displayName: "Build web project"
+  displayName: "dotnet restore"
+  inputs:
+    command: 'restore'
+    
+- task: DotNetCoreCLI@2
+  displayName: "dotnet build $(buildConfiguration)"
   inputs:
     command: 'build'
-    projects: $(SolutionPath)
+    arguments: '--configuration $(buildConfiguration)'
 
