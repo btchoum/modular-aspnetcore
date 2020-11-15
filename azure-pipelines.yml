@@ -15,16 +15,16 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-#- task: DotNetCoreCLI@2
-#  displayName: "dotnet restore"
-#  inputs:
-#    command: 'restore'
-    
-#- task: DotNetCoreCLI@2
-#  displayName: "dotnet build $(buildConfiguration)"
-#  inputs:
-#    command: 'build'
-#    arguments: '--configuration $(buildConfiguration)'
+- task: DotNetCoreCLI@2
+  displayName: "dotnet restore"
+  inputs:
+    command: 'restore'
+   
+- task: DotNetCoreCLI@2
+  displayName: "dotnet build $(buildConfiguration)"
+  inputs:
+    command: 'build'
+    arguments: '--configuration $(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
   displayName: "dotnet test"
@@ -33,10 +33,3 @@ steps:
     projects: '**/*Tests.csproj'
     arguments: '/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
     publishTestResults: true
-
-- task: PublishCodeCoverageResults@1
-  displayName: "Publish code coverage report"
-  inputs:
-    codeCoverageTool: 'Cobertura'
-    summaryFileLocation: '$(Build.SourcesDirectory)/tests/Sales.Tests/coverage.cobertura.xml'
-    failIfCoverageEmpty: true
