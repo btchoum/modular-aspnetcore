@@ -30,8 +30,8 @@ steps:
   displayName: "dotnet test"
   inputs:
     command: 'test'
-    projects: '**/*Tests/*.csproj'
-    arguments: '--configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./MyCoverage/'
+    projects: '**/*Tests.csproj'
+    arguments: '/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./MyCoverage/'
     publishTestResults: true
 
 - task: PublishCodeCoverageResults@1
