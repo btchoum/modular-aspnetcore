@@ -21,3 +21,8 @@ steps:
     command: 'build'
     projects: $(SolutionPath)
 
+- task: DotNetCoreCLI@2
+  displayName: "Unit and Integration Tests"
+  inputs:
+    command: 'test --no-restore --verbosity normal'
+    projects: $(SolutionPath)
