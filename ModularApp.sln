@@ -21,6 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebFrontEnd", "src\WebFront
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebFrontEnd.Tests", "tests\WebFrontEnd.Tests\WebFrontEnd.Tests.csproj", "{88F726ED-CD38-4B55-B007-8EF78912DB71}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{42FFB983-EA85-4FCF-A15B-ED93D77B17DB}"
+	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
